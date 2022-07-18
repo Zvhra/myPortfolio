@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav-bar">
+        <ul>
+          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a download href="/portfolio image/resume 2.png">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <span class="open-slide">
+          <a href="#" onclick="openSlideMenu()">
+            <svg width="25" height="25">
+              <path d="M0,5 30,5" stroke="black" stroke-width="2" />
+              <path d="M0,14 30,14" stroke="black" stroke-width="2" />
+              <path d="M0,23 30,23" stroke="black" stroke-width="2" />
+            </svg>
+          </a>
+        </span>
+      </nav>
+      <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a class="current" href="index.html">Home</a>
+        <a href="project.html">Projects</a>
+        <a download href="portfolio image/resume 2.png">Resume</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <section id="showcase">
+        <div id="introduction">
+          <h1>< Hi, I'm Fatima /></h1>
+          <h2>
+            I am a <strong>Front End Web Developer</strong> from Ilorin,
+            Nigeria:)
+          </h2>
+          <p>
+            I'm here to help your business boom by writing testable and
+            efficient code using the best practices in Web Development with
+            HTML, CSS and JavaScript
+          </p>
+          <img
+            src="/portfolio image/muslimah 2.jpg"
+            alt=""
+            srcset=""
+            width="70%"
+          />
+        </div>
+      </section>
+      <footer class="index">&copy 2022 - Made by fv_timaCodes</footer>
+    </div>
+    <script>
+      function openSlideMenu() {
+        document.getElementById("side-menu").style.width = "100px";
+        document.getElementById("introduction").style.marginTop = "170px";
+      }
+      function closeSlideMenu() {
+        document.getElementById("side-menu").style.width = "0";
+        document.getElementById("introduction").style.marginTop = "0";
+      }
+    </script>
+  </body>
+</html>

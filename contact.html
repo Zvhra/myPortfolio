@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a download href="portfolio image/resume 2.png">Resume</a></li>
+          <li><a class="current" href="contact.html">Contact</a></li>
+        </ul>
+        <span class="open-slide">
+          <a href="#" onclick="openSlideMenu()">
+            <svg width="25" height="25">
+              <path d="M0,5 30,5" stroke="black" stroke-width="2" />
+              <path d="M0,14 30,14" stroke="black" stroke-width="2" />
+              <path d="M0,23 30,23" stroke="black" stroke-width="2" />
+            </svg>
+          </a>
+        </span>
+      </nav>
+      <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="project.html">Projects</a>
+        <a download href="portfolio image/resume 2.png">Resume</a>
+        <a class="current" href="contact.html">Contact</a>
+      </div>
+      <div class="contact">
+        <h1>Contact Me</h1>
+        <p>
+          I am currently looking for work!. If you would hire me, pls use my
+          contact info here:
+        </p>
+        <a href="mailto:foluwalogbon@gmail.com">foluwalogbon@gmail.com</a>
+        <br />
+        <a href="tel:+2348066952753">08066952753</a>
+        <div class="follow">
+          <h1>Follow Me</h1>
+          <a href="https://github.com/Zvhra"
+            ><img
+              src="/portfolio image/github.jpg"
+              alt=""
+              srcset=""
+              width="40px"
+              height="40px"
+              style="border-radius: 50%"
+          /></a>
+          <a href="https://www.linkedin.com/in/zahra-oluwalogbon-287b35242"
+            ><img
+              src="/portfolio image/linkedin.jpg"
+              alt=""
+              srcset=""
+              width="40px"
+              height="40px"
+              style="border-radius: 50%"
+          /></a>
+          <a href="https://twitter.com/fv_tima"
+            ><img
+              src="/portfolio image/twitter.png"
+              alt=""
+              srcset=""
+              width="40px"
+              height="40px"
+              style="border-radius: 50%"
+          /></a>
+          <a
+            href="https://www.instagram.com/teemah247/
+          "
+            ><img
+              src="/portfolio image/instagram.png"
+              alt=""
+              srcset=""
+              width="40px"
+              height="40px"
+              style="border-radius: 50%"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <footer style="margin-top: 150px">&copy 2022 - Made by fv_timaCodes</footer>
+
+    <script>
+      function openSlideMenu() {
+        document.getElementById("side-menu").style.width = "100px";
+        document.getElementById("project").style.marginRight = "200px";
+      }
+      function closeSlideMenu() {
+        document.getElementById("side-menu").style.width = "0";
+        document.getElementById("project").style.marginRight = "0";
+      }
+    </script>
+  </body>
+</html>

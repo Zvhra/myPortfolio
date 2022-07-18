@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="current" href="project.html">Projects</a></li>
+          <li><a href="/resume 2.png" download>Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <span class="open-slide">
+          <a href="#" onclick="openSlideMenu()">
+            <svg width="25" height="25">
+              <path d="M0,5 30,5" stroke="black" stroke-width="2" />
+              <path d="M0,14 30,14" stroke="black" stroke-width="2" />
+              <path d="M0,23 30,23" stroke="black" stroke-width="2" />
+            </svg>
+          </a>
+        </span>
+      </nav>
+      <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="index.html">Home</a>
+        <a class="current" href="project.html">Projects</a>
+        <a href="portfolio image/resume 2.png" download>Resume</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <section id="project">
+        <h1>Recent Projects</h1>
+        <div class="boxes">
+          <div class="box1">
+            <img
+              src="/portfolio image/designs.jpg"
+              alt=""
+              width="300px"
+              srcset=""
+            />
+            <h4>An Interior Design Site</h4>
+            <p>
+              A team of interior designer site that designs, plans and decorate
+              your home based on your ideas and inputs
+            </p>
+            <button>
+              <a href="https://zvhraslinedesign.netlify.app">Demo</a>
+            </button>
+          </div>
+          <div class="box2">
+            <img
+              src="/portfolio image/download.png"
+              alt=""
+              width="300px"
+              height="200px"
+              srcset=""
+            />
+            <h4>Random Quote Generator Site</h4>
+            <p>
+              A quote generator site that generates and displays quotations and
+              the author's name to the user everytime they click a button
+            </p>
+            <button>
+              <a href="https://zvhrasrandomquotegenerator.netlify.app/">Demo</a>
+            </button>
+          </div>
+          <div class="box3">
+            <img
+              src="/portfolio image/calculator.jpg"
+              alt=""
+              width="300px"
+              srcset=""
+            />
+            <h4>Calculator Site</h4>
+            <p>
+              A calculator site for basic calculations including, subtraction,
+              multiplication and division as well as an 'All Clear' feature.
+            </p>
+            <button>
+              <a href="https://zvhrascalculator.netlify.app">Demo</a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <aside>More to come soon!</aside>
+      <footer style="margin-top: 20px">
+        &copy 2022 - Made by fv_timaCodes
+      </footer>
+    </div>
+    <script>
+      function openSlideMenu() {
+        document.getElementById("side-menu").style.width = "100px";
+        document.getElementById("project").style.marginRight = "200px";
+      }
+      function closeSlideMenu() {
+        document.getElementById("side-menu").style.width = "0";
+        document.getElementById("project").style.marginRight = "0";
+      }
+    </script>
+  </body>
+</html>

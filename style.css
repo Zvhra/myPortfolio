@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav span {
+  display: none;
+  margin-top: 10px;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+}
+.container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+nav li {
+  margin: 10px;
+  list-style: none;
+}
+nav a,
+.boxes a {
+  text-decoration: none;
+  color: black;
+  font-weight: 100;
+}
+nav a:hover {
+  font-weight: 400;
+}
+.current {
+  padding-bottom: 5px;
+  border-bottom: solid 2px #e3abab;
+}
+#introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 35%;
+  margin: 20px auto 0 auto;
+}
+h1,
+h2,
+p,
+h4 {
+  font-weight: 200;
+  margin-bottom: 7px;
+}
+#showcase {
+  margin-top: 12 px;
+  border: 20px solid #e3abab;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  overflow: hidden;
+  padding: 20px;
+  min-height: 18vh;
+}
+.index {
+  background-color: #e3abab;
+}
+#project h1,
+aside {
+  text-align: center;
+  margin: 20px auto;
+}
+.side-nav {
+  margin: 20px 20px 0 0;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: white;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+.side-nav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-weight: 100;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+.side-nav a:hover {
+  font-weight: 400;
+}
+.side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.boxes {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+  text-align: center;
+}
+.box1,
+.box2,
+.box3 {
+  padding: 10px;
+  border: 0.5px solid #e3abab;
+}
+.boxes button {
+  padding: 5px;
+}
+.contact {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+}
+.contact a {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+  nav ul {
+    display: none;
+  }
+  nav span {
+    display: block;
+    text-align: end;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  #introduction {
+    width: 80%;
+  }
+  .boxes {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  footer {
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+  }
+}
